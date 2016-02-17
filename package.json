@@ -1,0 +1,45 @@
+{
+  "name": "ubench",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "description": "Micro bench!",
+  "main": "lib/ubench.js",
+  "bin": {
+    "ubench": "./bin/ubench"
+  },
+  "directories": {
+    "test": "test",
+    "bench": "bench"
+  },
+  "dependencies": {
+    "async-kit": "^0.6.8",
+    "freedesktop-notifications": "^1.2.1",
+    "glob": "^7.0.0",
+    "minimist": "^1.2.0",
+    "string-kit": "^0.4.1",
+    "terminal-kit": "^0.23.1",
+    "tmp": "0.0.28"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "jshint": "^2.9.1",
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "mocha -R dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cronvel/ubench.git"
+  },
+  "keywords": [
+    "bench"
+  ],
+  "author": "Cédric Ronvel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cronvel/ubench/issues"
+  }
+}
