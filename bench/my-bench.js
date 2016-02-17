@@ -3,15 +3,15 @@
 
 var i = 0 ;
 
-bench( 'toto' , 'i++' , function() {
+bench( 'increment' , 'i++' , function() {
 	i++ ;
 } ) ;
 
-bench( 'toto' , 'i = i + 1' , function() {
+bench( 'increment' , 'i = i + 1' , function() {
 	i = i + 1 ;
 } ) ;
 
-bench( 'toto' , "i = i + '1'" , function() {
+bench( 'increment' , "i = i + '1'" , function() {
 	i = i + '1' ;
 } ) ;
 
