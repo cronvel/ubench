@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-require( '../lib/ubench.js' ).cli() ;
+
+var sub = require( 'child_process' ).spawn( 'node', [ '--expose-gc' , __dirname + '/../lib/ubench-cli.js' ] ) ;
+sub.stdout.pipe( process.stdout ) ;
+sub.stderr.pipe( process.stderr ) ;
