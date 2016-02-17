@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-var sub = require( 'child_process' ).spawn( 'node', [ '--expose-gc' , __dirname + '/../lib/ubench-cli.js' ] ) ;
+var sub = require( 'child_process' ).spawn( 'node', [ '--nouse-idle-notification' , '--expose-gc' , __dirname + '/../lib/ubench-cli.js' ] ) ;
 sub.stdout.pipe( process.stdout ) ;
 sub.stderr.pipe( process.stderr ) ;
