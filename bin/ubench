@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var args = [ '--nouse-idle-notification' , '--expose-gc' , __dirname + '/../lib/ubench-cli.js' ]
-	.concat( process.argv ) ;
+	.concat( process.argv.slice( 2 ) ) ;
 
 var sub = require( 'child_process' ).spawn( 'node', args ) ;
 
