@@ -1,6 +1,6 @@
 {
   "name": "ubench",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -14,12 +14,11 @@
     "bench": "bench"
   },
   "dependencies": {
-    "async-kit": "^0.6.8",
-    "freedesktop-notifications": "^1.2.1",
+    "async-kit": "^0.6.9",
     "glob": "^7.0.0",
     "minimist": "^1.2.0",
     "string-kit": "^0.4.1",
-    "terminal-kit": "^0.23.1",
+    "terminal-kit": "^0.24.0",
     "tmp": "0.0.28"
   },
   "devDependencies": {
