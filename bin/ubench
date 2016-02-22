@@ -1,9 +1,21 @@
 #!/usr/bin/env node
 
-var args = [ '--nouse-idle-notification' , '--expose-gc' , __dirname + '/../lib/ubench-cli.js' ]
+var minimist = require( 'minimist' ) ;
+var userArgs = minimist( process.argv.slice( 2 ) ) ;
+
+var childArgs = [ '--nouse-idle-notification' , '--expose-gc' , __dirname + '/../lib/ubench-cli.js' ]
 	.concat( process.argv.slice( 2 ) ) ;
 
-var sub = require( 'child_process' ).spawn( 'node', args ) ;
+var child ;
 
-sub.stdout.pipe( process.stdout ) ;
-sub.stderr.pipe( process.stderr ) ;
+if ( userArgs.jx )
+{
+	child = require( 'child_process' ).spawn( 'jx' , childArgs ) ;
+}
+else
+{
+	child = require( 'child_process' ).spawn( 'node' , childArgs ) ;
+}
+
+child.stdout.pipe( process.stdout ) ;
+child.stderr.pipe( process.stderr ) ;
