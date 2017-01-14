@@ -1,6 +1,6 @@
 {
   "name": "ubench",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -14,11 +14,12 @@
     "bench": "bench"
   },
   "dependencies": {
-    "async-kit": "^1.0.0",
-    "glob": "^7.0.3",
+    "async-kit": "^2.2.3",
+    "glob": "^7.1.1",
     "minimist": "^1.2.0",
-    "string-kit": "^0.4.1",
-    "terminal-kit": "^0.24.2",
+    "mocha": "^2.5.3",
+    "string-kit": "^0.5.14",
+    "terminal-kit": "^0.26.1",
     "tmp": "0.0.28"
   },
   "devDependencies": {
