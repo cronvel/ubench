@@ -1,6 +1,6 @@
 {
   "name": "ubench",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -15,20 +15,17 @@
   },
   "dependencies": {
     "async-kit": "^2.2.3",
-    "glob": "^7.1.1",
+    "glob": "^7.1.2",
     "minimist": "^1.2.0",
-    "mocha": "^2.5.3",
-    "string-kit": "^0.5.14",
-    "terminal-kit": "^0.26.1",
-    "tmp": "0.0.28"
+    "string-kit": "^0.5.26",
+    "terminal-kit": "^1.11.2",
+    "tmp": "0.0.31"
   },
   "devDependencies": {
-    "expect.js": "^0.3.1",
-    "jshint": "^2.9.2",
-    "mocha": "^2.4.5"
+    "expect.js": "^0.3.1"
   },
   "scripts": {
-    "test": "mocha -R dot"
+    "test": "tea-time -R dot"
   },
   "repository": {
     "type": "git",
