@@ -3,7 +3,7 @@
 
 
 
-benchmark( "new vs object.create()" , function() {
+benchmark( "new vs Object.create()" , function() {
 	
 	competitor( "object literal" , function() {
 		var v1 = { x: 1 , y: 2 , z: 3 } ;
