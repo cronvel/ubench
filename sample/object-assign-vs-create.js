@@ -41,11 +41,29 @@ benchmark( "Clone (top-level only) and change: Object.assign() vs Object.create(
 		return modified ;
 	} ) ;
 	
-	competitor( "Object.create()" , () => {
+	competitor( "Object.create() assign after" , () => {
 		var modified = Object.create( object ) ;
 		modified.a = 7 ;
 		modified.f = "changed" ;
 		modified.g = "new" ;
+		return modified ;
+	} ) ;
+
+	competitor( "Object.create() with descriptor" , () => {
+		var modified = Object.create( object , {
+			a: { value: 7 } ,
+			f: { value: "changed" } ,
+			g: { value: "new" }
+		} ) ;
+		return modified ;
+	} ) ;
+
+	competitor( "Object.create() inside Object.assign()" , () => {
+		var modified = Object.assign( Object.create( object ) , {
+			a: 7 ,
+			f: "changed" ,
+			g: "new"
+		} ) ;
 		return modified ;
 	} ) ;
 } ) ;
