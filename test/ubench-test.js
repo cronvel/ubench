@@ -29,7 +29,7 @@
 
 
 
-var ubench = require( '../lib/ubench.js' ) ;
+const ubench = require( '../lib/ubench.js' ) ;
 
 
 
@@ -39,9 +39,9 @@ var ubench = require( '../lib/ubench.js' ) ;
 			/* Tests */
 
 
-describe( "Take times..." , function() {
+describe( "Take times..." , () => {
 	
-	it( "... to write tests" , function() {
+	it( "... to write tests" , () => {
 	} ) ;
 	
 } ) ;
