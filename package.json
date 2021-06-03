@@ -1,6 +1,6 @@
 {
   "name": "ubench",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -14,11 +14,11 @@
     "bench": "bench"
   },
   "dependencies": {
-    "glob": "^7.1.6",
+    "glob": "^7.1.7",
     "minimist": "^1.2.5",
-    "seventh": "^0.7.35",
-    "string-kit": "^0.11.7",
-    "terminal-kit": "^1.35.7"
+    "seventh": "^0.7.40",
+    "string-kit": "^0.12.5",
+    "terminal-kit": "^2.1.5"
   },
   "devDependencies": {
     "expect.js": "^0.3.1"
